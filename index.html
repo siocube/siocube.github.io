@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIOcube | 現地調査支援Webアプリ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background: #002e5b;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #002e5b;
+    }
+    .main-image {
+      width: 100%;
+      height: auto;
+      margin: 2rem 0;
+      border: 1px solid #ccc;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .plans {
+      background-color: #e0f7fa;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    .highlight {
+      background-color: #fff8e1;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 5px solid #ffca28;
+    }
+.intro-images {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.image-container {
+  position: relative;
+}
+
+.featured-image {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  display: block;
+  border-radius: 6px;
+}
+
+.caption {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: rgba(0, 46, 91, 0.85);
+  color: white;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* モバイル対応：画像下部にキャプション出す場合はこっちに切り替えてもよい */
+@media (max-width: 768px) {
+  .caption {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+	<h3>SIOcube</h3>
+    <h3>あるようで無かった現場と事務所を繋ぐ調査アプリ</h3>
+    <p>調査項目をユーザー側で自由に設定・変更可能</p>
+    <p>PC、タブレット、スマホでも。マルチデバイス対応</p>
+
+  </header>
+
+  <section>
+<h2>WebGISを活用した調査支援アプリケーション</h2>
+<div class="intro-images">
+  <div class="image-container">
+    <span class="caption">現地調査情報をその場でDBに反映、情報の一元化</span>
+    <img src="img/20250616_image1.png" alt="現場情報をDBに反映" class="featured-image">
+  </div>
+  <div class="image-container">
+    <span class="caption">操作画面のイメージ</span>
+    <img src="img/20250616_image2.png" alt="スマホやPCでの操作画面" class="featured-image">
+  </div>
+  <div class="image-container">
+    <span class="caption">データの出力フォーマット</span>
+    <img src="img/20250616_image3.png" alt="PDF, CSVなど出力対応" class="featured-image">
+  </div>
+    <div class="image-container">
+    <span class="caption">直感的な操作</span>
+    <img src="img/20250616_image4.png" alt="直感的な操作" class="featured-image">
+  </div>
+</div>
+
+    <!-- <h2>よくあるお悩み</h2> -->
+    <!-- <ul> -->
+    <!--   <li>現場のおっちゃん「よし、作業終わったし、事務所に戻って紙資料をデータ化してもらおう。」</li> -->
+    <!--   <li>事務所のお姉さん「この手書き文字、まるで暗号。全く読めない。。。」</li> -->
+    <!--   <li>「あれ、これ去年の調査結果？もうわけわかんなーい！」</li> -->
+    <!-- </ul> -->
+
+    <h2>調査アプリのメリット</h2>
+    <div class="highlight">
+      <strong>現場で調査結果が完了: </strong>現場で入力するからミス軽減、事務所に戻って作業が簡略化
+    </div>
+    <div class="highlight">
+      <strong>現場と事務所がリアルタイム共有: </strong> 進捗管理も楽々、変更支持など管理を効率化
+    </div>
+    <div class="highlight">
+      <strong>調査項目のユーザー設定: </strong> 多種多様な調査に対応
+    </div>
+
+    <h2>SIOcubeとは</h2>
+    <p>SIOcube（Surveying & Investigation Optimization）とは、三英技研が提供する現地調査支援のWebアプリケーションです。ソフトウェアのインストール不要で、ブラウザがあればすぐに利用可能です。</p>
+    <ul>
+      <li>インフラ点検、設備点検、現地踏査、災害現場調査に対応</li>
+      <li>インターネット接続があればどこでも利用可能</li>
+    </ul>
+<h2>機能一覧</h2>
+<div style="overflow-x: auto;">
+  <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%; min-width: 600px;">
+    <thead style="background-color: #002e5b; color: white;">
+      <tr><th>機能内容</th><th>内容</th><th>備考</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>地図表示</td><td>〇</td><td>国土地理院地図、オルソ画像、OpenStreetMap</td></tr>
+      <tr><td>任意地図、図面表示</td><td>〇</td><td>CAD、PDF、画像ファイルを背景表示可能</td></tr>
+      <tr><td>調査項目の登録・変更</td><td>〇</td><td>ユーザーによる自由設定（入力形式も多様）</td></tr>
+      <tr><td>調査登録項目数</td><td>20</td><td>登録できる項目数</td></tr>
+      <tr><td>基礎情報</td><td>1回前</td><td>過年度の点検データの登録（フォーマットの調整によりCSV読み込み対応）</td></tr>
+      <tr><td>登録写真枚数制限</td><td>無制限</td><td>画像圧縮1MB/枚を推奨</td></tr>
+      <tr><td>写真方向</td><td>〇</td><td>手動設定可能</td></tr>
+      <tr><td>写真解像度設定</td><td>〇</td><td>オリジナル保存でストレージ消費に注意</td></tr>
+      <tr><td>ストレージ容量</td><td>100GB</td><td>別途ストレージの追加可</td></tr>
+      <tr><td>システムのカスタマイズ</td><td>〇</td><td>案件毎や調査項目が複雑な場合など、有償にてシステムのカスタマイズ対応</td></tr>
+    </tbody>
+  </table>
+</div>
+<h2>ライセンス利用価格</h2>
+<div class="plans" style="overflow-x: auto;">
+  <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%; min-width: 400px;">
+    <thead style="background-color: #004d40; color: white;">
+      <tr><th>ライセンス数</th><th>価格（税込）</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>～5</td><td>¥660,000 / 年間</td></tr>
+      <tr><td>追加1ライセンスあたり</td><td>¥48,000 / 年間</td></tr>
+      <tr><td>登録手数料</td><td>¥100,000</td></tr>
+      <tr><td>導入講習</td><td>~¥200,000</td></tr>
+    </tbody>
+  </table>
+  ※ご契約期間は応相談可！
+</div>
+
+<h2>追加ストレージ価格</h2>
+<div class="plans" style="overflow-x: auto;">
+  <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%; min-width: 400px;">
+    <thead style="background-color: #006064; color: white;">
+      <tr><th>容量</th><th>年間料金</th><th>1GBあたり単価</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>200GB</td><td>¥50,000</td><td>¥250</td></tr>
+      <tr><td>500GB</td><td>¥100,000</td><td>¥200</td></tr>
+      <tr><td>1TB</td><td>¥150,000</td><td>¥150</td></tr>
+      <tr><td>5TB</td><td>¥750,000</td><td>¥150</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>「SIOcube」のアンケートにご協力ください。</h2>
+<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__SOJ3RRUNVpETzc3QzRDV0NEWTk2TkNVMTZBVk41Ti4u">アンケートのリンク先（Microsoft Forms）</a>
+
+<h2>お問い合わせ</h2>
+<a>販売に関するお問い合わせ先は、「sales「＠」sanei.co.jp」</a>
+
+  </section>
+</body>
+</html>
